@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon-16x16.png">
 
+
+    <!-- AOS SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
@@ -63,18 +67,22 @@
                 <div class="container-fluid">
 
                     <div class="title">
-                        <h1>ELON MUSK, The real life Iron-Man</h1>
-                        <h5>An exciting, yet inspiring story !</h5>
+                        <div data-aos="fade-left">
+                            <h1>ELON MUSK, The real life Iron-Man</h1>
+                        </div>
+                        <div data-aos="fade-right">
+                            <h5>An exciting, yet inspiring story !</h5>
+                        </div>
                     </div>
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <button data-aos="fade-right" type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-bars"></i>
                     </button>
 
 
             </nav>
 
-            <div class="intro">
-                <img class="img" src="./imgs/elon.jpg">
+            <div data-aos="fade-right" class="intro">
+                <img data-aos="fade-right" class="img" src="./imgs/elon.jpg">
 
                 <h2>
                     <h3 id="intro">Introduction</h3>
@@ -97,8 +105,8 @@
 
             <div class="margin"></div>
 
-            <div class="intro">
-                <img class="img2" src="./imgs/elon2.jpg">
+            <div data-aos="fade-left" class="intro">
+                <img data-aos="fade-left" class="img2" src="./imgs/elon2.jpg">
 
                 <h3 id="early" class="scnd">Early Life</h3>
 
@@ -113,9 +121,11 @@
                     available in the United States.
                 </p>
             </div>
+
             <div class="margin"></div>
-            <div class="sucess">
-                <img class="img3" src="./imgs/elon3.jpg">
+
+            <div data-aos="fade-right" class="sucess">
+                <img data-aos="fade-right" class="img3" src="./imgs/elon3.jpg">
 
                 <h3 id="success" class="third">Sucess</h3>
 
@@ -152,7 +162,7 @@
     <!-- jQuery Custom Scroller CDN -->
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 
